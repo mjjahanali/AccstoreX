@@ -3,6 +3,7 @@ import {
   PageType, Product, Category, CartItem, Order, Coupon, OrderStatus, BlogPost 
 } from './types';
 import { PRODUCTS, BLOGS } from './data';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // Component imports
 import Header from './components/Header';
@@ -566,6 +567,9 @@ export default function App() {
         </div>
 
       </footer>
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
 
     </div>
   );
